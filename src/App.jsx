@@ -1,4 +1,8 @@
 import './App.css';
+import BurgerStack from './components/BurgerStack';
+import IngredientList from "./components/IngredientList";
+import { useState } from 'react';
+
 
 export const availableIngredients = [
   { name: 'Kaiser Bun', color: 'saddlebrown' },
@@ -22,7 +26,8 @@ const App = () => {
     <main>
       <h1>Burger Stacker</h1>
       <section>
-      {/* List & Stack components */}
+        <IngredientList />  
+        <BurgerStack />
       </section>
     </main>
   );
