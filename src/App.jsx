@@ -45,7 +45,11 @@ const App = () => {
           addToBurger={addToBurger}
           availableIngredients={availableIngredients}
         />
-
+    <BurgerStack
+          removeFromBurger={removeFromBurger}
+          burgerStack={burgerStack}
+          availableIngredients={availableIngredients}
+        />
 
 
       </section>
