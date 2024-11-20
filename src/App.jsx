@@ -37,5 +37,10 @@ const App = () => {
     setBurgerStack(updatedBurgerStack);
   };
 
+  return (
+    <main>
+      <h1>Burger Stacker</h1>
+      <section></section>
+
   
 export default App;
