@@ -22,15 +22,19 @@ export const availableIngredients = [
 ];
 
 const App = () => {
+
   const [burgerStack, setBurgerStack] = useState([]);
+  // uses hook from React to manage the state of burgerStack
 
   const addToBurger = (newIngredient) => {
     const updatedBurgerStack = [...burgerStack, newIngredient];
+    // creates a new array called using the spread operator "..."
     setBurgerStack(updatedBurgerStack);
   };
-
+ // adds ingredients to the UI
 
   const removeFromBurger = (removedIngredient) => {
+//  functon used to remove ingredients from the burger
     const updatedBurgerStack = burgerStack.filter(
       (ingredient) => ingredient.name !== removedIngredient.name
     );
@@ -45,14 +49,14 @@ const App = () => {
           addToBurger={addToBurger}
           availableIngredients={availableIngredients}
         />
-    <BurgerStack
+      <BurgerStack
           removeFromBurger={removeFromBurger}
           burgerStack={burgerStack}
           availableIngredients={availableIngredients}
         />
-
-
       </section>
+    </main>
+  );
+};
 
-  
 export default App;
