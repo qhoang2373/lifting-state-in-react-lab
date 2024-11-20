@@ -1,7 +1,8 @@
+// App.jsx
 import './App.css';
-import { useState } from 'react';
-import IngredientList from "./components/IngredientList";
 import BurgerStack from './components/BurgerStack';
+import IngredientList from "./components/IngredientList";
+import { useState } from 'react';
 
 export const availableIngredients = [
   { name: 'Kaiser Bun', color: 'saddlebrown' },
@@ -21,15 +22,13 @@ export const availableIngredients = [
 ];
 
 const App = () => {
-  return (
-    <main>
-      <h1>Burger Stacker</h1>
-      <section>
-        <IngredientList />  
-        <BurgerStack />
-      </section>
-    </main>
-  );
-};
+  const [burgerStack, setBurgerStack] = useState([]);
 
+  const addToBurger = (newIngredient) => {
+    const updatedBurgerStack = [...burgerStack, newIngredient];
+    setBurgerStack(updatedBurgerStack);
+  };
+
+
+  
 export default App;
