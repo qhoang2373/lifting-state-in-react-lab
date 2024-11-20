@@ -1,4 +1,4 @@
-// IngredientList.jsx
+
 import '../App.css';
 
 const IngredientList = (props) => {
