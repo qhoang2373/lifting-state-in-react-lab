@@ -40,7 +40,15 @@ const App = () => {
   return (
     <main>
       <h1>Burger Stacker</h1>
-      <section></section>
+      <section>
+      <IngredientList
+          addToBurger={addToBurger}
+          availableIngredients={availableIngredients}
+        />
+
+
+
+      </section>
 
   
 export default App;
