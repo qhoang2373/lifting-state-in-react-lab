@@ -3,9 +3,6 @@ import { useState } from 'react';
 import IngredientList from "./components/IngredientList";
 import BurgerStack from './components/BurgerStack';
 
-
-
-
 export const availableIngredients = [
   { name: 'Kaiser Bun', color: 'saddlebrown' },
   { name: 'Sesame Bun', color: 'sandybrown' },

@@ -1,7 +1,16 @@
 import '../App.css';
+
 const BurgerStack = (props) => {
-    return <ul>// map through props.ingredients</ul>;
-  };
+    return (
+        <ul>
+          {stack.map((ingredient, index) => {
+            
+         }
+
+
+    </ul>
+);
+
   
   export default BurgerStack;
   
