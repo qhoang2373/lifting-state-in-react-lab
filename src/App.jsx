@@ -30,5 +30,12 @@ const App = () => {
   };
 
 
+  const removeFromBurger = (removedIngredient) => {
+    const updatedBurgerStack = burgerStack.filter(
+      (ingredient) => ingredient.name !== removedIngredient.name
+    );
+    setBurgerStack(updatedBurgerStack);
+  };
+
   
 export default App;
